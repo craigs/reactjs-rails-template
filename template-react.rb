@@ -1,5 +1,5 @@
 gem 'haml-rails'
-gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+gem 'react-rails', '~> 1.0'
 gem 'flux-rails-assets'
 gem 'sprockets-coffee-react'
 
