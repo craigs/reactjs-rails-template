@@ -1,5 +1,5 @@
 gem 'haml-rails'
-gem 'react-rails', '~> 1.0'
+gem 'react-rails'
 gem 'flux-rails-assets'
 gem 'sprockets-coffee-react'
 
@@ -40,7 +40,6 @@ file 'app/views/layouts/application.html.haml', <<-CODE
     = csrf_meta_tags
 
   %body
-
     = yield
 CODE
 
@@ -51,7 +50,7 @@ file 'app/assets/javascripts/components/button.js.cjsx', <<-CODE
     alert "You clicked on Button.onClick"
 
   render: ->
-    <button onClick={ this.onClick }>{ this.props.text }</button>
+    <button onClick={ @onClick }>{ @props.text }</button>
 CODE
 
 file 'app/views/welcome/index.html.haml', <<-CODE
